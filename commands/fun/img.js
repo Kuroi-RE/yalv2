@@ -30,7 +30,7 @@ module.exports = {
         if (!error && response.statusCode === 200) {
           var res = JSON.parse(body);
           const embedd = embed.setImage(res.url);
-          await message.reply("Wait a second(s)")
+          message.reply("Wait a second(s)");
           message.channel.send(embedd);
         }
       });
