@@ -35,14 +35,22 @@ client.on("message", async (message) => {
     console.log(`Logout!`);
     process.exit();
   }
-  if (cmd === "lewd") {
-    const urlAPI = "https://nekos.life/api/cum_png";
-    if (!message.channel.nsfw) {
-      message.reply("YOU MUST USE THIS COMMANDS IN NSFW CHANNEL!");
-    }
-  }
 });
 
+client.on("guildMemberAdd", async (member) => {
+  const guild = client.guilds.cache.get("744885612460507145");
+  const stafChannel = guild.channels.cache.get("744918429412098108");
+  const embed = new discord.MessageEmbed()
+    .setAuthor("Member Guild Add", member.guild.iconURL())
+    .setThumbnail(member.user.displayAvatarURL({ dynamic: true, size: 512 }))
+    .addField("Member:", member)
+    .addField("Member ID:", member.id)
+    .addField(
+      "Joined:",
+      moment(member.joinedAt).format("dddd, MMMM Do YYYY, HH:mm:ss")
+    );
+    stafChannel.send(embed)
+});
 //! make client
 handler(client);
 loadFeature(client);

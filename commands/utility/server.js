@@ -6,7 +6,7 @@ module.exports = {
   description: "Show server stats from current Guild",
   category: "Utility",
   async execute(message, args) {
-    message.delete();
+    message.delete({ timeout: 10000 });
     const guild = message.guild;
     const name = guild.name;
     const id = guild.id;
