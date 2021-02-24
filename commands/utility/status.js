@@ -3,6 +3,8 @@ const moment = require("moment");
 module.exports = {
   name: "status",
   aliases: ["presence"],
+  category: "Utility",
+  usage: "<user>",
   description: "Show activites status",
   async execute(message, args) {
     let user =

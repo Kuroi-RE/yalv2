@@ -4,6 +4,8 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "rendeem",
+  category: "Utility",
+  usage: "[code]",
   description: "rendeem your code in here!",
   execute(message, args) {
     const code = args[0];

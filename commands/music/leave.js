@@ -1,6 +1,7 @@
 module.exports = {
   name: "leave",
   guildOnly: true,
+  description: "Leave bot from voice channels.",
   category: "Music",
   async execute(message, args) {
     const { channel } = message.member.voice;

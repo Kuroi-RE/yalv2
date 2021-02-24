@@ -4,6 +4,7 @@ const { owner } = require("../../data/config.json");
 module.exports = {
   name: "docs",
   aliases: ["discord"],
+  category: "Onwer Only",
   usage: "[docs name]",
   description: "Show discord js Docs",
   async execute(message, args) {

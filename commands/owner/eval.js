@@ -5,6 +5,7 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "eval",
   usage: "[code]",
+  category: "Onwer Only",
   async execute(message, args) {
     if (message.author.id !== owner) {
       sendError("Only owner can Eval!", message.channel);

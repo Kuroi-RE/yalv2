@@ -1,5 +1,6 @@
 module.exports = {
   name: "reset-guild",
+  category: "Onwer Only",
   async execute(message, args) {
     const { owner } = require("../../data/config.json");
     if (message.author.id !== owner)

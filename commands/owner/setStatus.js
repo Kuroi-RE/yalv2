@@ -5,6 +5,7 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "setStatus",
   aliases: ["setPresence"],
+  category: "Onwer Only",
   description: "change the bot status",
   usage: "[dnd | online | invisible | idle]",
   async execute(message, args) {

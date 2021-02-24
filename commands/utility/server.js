@@ -3,6 +3,7 @@ const discord = require("discord.js");
 module.exports = {
   name: "server-stats",
   aliases: ["server", "ss"],
+  description: "Show server stats from current Guild",
   category: "Utility",
   async execute(message, args) {
     message.delete();

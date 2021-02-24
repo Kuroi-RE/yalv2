@@ -4,6 +4,7 @@ module.exports = {
   name: "play",
   usage: "[url]",
   guildOnly: true,
+  description: "Let bot play a music for you",
   category: "Music",
   async execute(message, args) {
     message.delete();

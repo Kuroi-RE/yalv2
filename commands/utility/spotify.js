@@ -3,6 +3,9 @@ const sendError = require("../../data/error");
 
 module.exports = {
   name: "spotify",
+  category: "Utility",
+  usage: "<user>",
+  cooldowns: 7,
   description: "Show the details status [Spotify]",
   async execute(message, args) {
     let user =

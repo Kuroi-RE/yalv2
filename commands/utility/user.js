@@ -3,6 +3,9 @@ const discord = require("discord.js");
 
 module.exports = {
   name: "user-info",
+  usage: "<user>",
+  category: "Utility",
+  description: "Show user info",
   cooldown: 7,
   async execute(message, args) {
     message.channel.startTyping();

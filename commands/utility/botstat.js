@@ -18,8 +18,7 @@ module.exports = {
       2
     )}MB of 500MB RAM`;
     const ping = client.ws.ping;
-    const cmd = [10];
-    const cmdTotal = cmd ? cmd : "Unspecified";
+    const cmd = "Unspecified";
     const embed = new MessageEmbed()
       .setAuthor(
         `${client.user.username} Stats`,
@@ -33,7 +32,7 @@ module.exports = {
       .addField("Status", client.user.presence.status, true)
       .addField("Presence", presenceName, true)
       .addField("Type Presence", presence, true)
-      .addField("Commands Count", cmdTotal, true)
+      .addField("Commands Count", cmd, true)
       .addField("Storage", ramTotal, true)
       .addField("API Latency", `${ping}ms`, true)
       .addField(

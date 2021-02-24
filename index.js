@@ -13,7 +13,8 @@ client.on("ready", () => {
   const guildHome = client.guilds.cache.get("744885612460507145");
   const activity = [
     `${guildHome.memberCount} Members | ${guildHome.channels.cache.size} Channels | ${guildHome.roles.cache.size} Roles`,
-    "V2.0.1",
+    "V2.0.6",
+    "I'm Online!",
   ];
   setInterval(() => {
     let rndmAct = activity[Math.floor(Math.random() * activity.length)];
