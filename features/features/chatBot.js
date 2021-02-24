@@ -13,7 +13,7 @@ module.exports = (client) => {
         function (error, response, body) {
           if (!error && response.statusCode === 200) {
             var res = JSON.parse(body);
-            channel.send(res.res).catch((Error) => message.channel.send(Error));
+            channel.send(res.succes).catch((Error) => message.channel.send(Error));
           }
         }
       );
