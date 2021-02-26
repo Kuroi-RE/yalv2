@@ -15,6 +15,7 @@ module.exports = {
   name: "im",
   aliases: ["claim", "get"],
   description: "Claim a free role",
+  usage: "[namerole]",
   category: "Utility",
   cooldown: 10,
   async execute(message, args) {

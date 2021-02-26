@@ -35,19 +35,6 @@ client.on("message", async (message) => {
     console.log(`Logout!`);
     process.exit();
   }
-  if (cmd === lock) {
-    if (!args.length) {
-      message.channel.send("You must give the reason");
-    }
-    const reason = args.join(" ");
-    message.channel.overwritePermissions([
-      {
-        id: message.guild.id,
-        deny: ["SEND_MESSAGES"],
-      },
-    ]);
-    message.channel.send("Channel lockdown!\nReason: " + reason);
-  }
 });
 
 client.on("guildMemberAdd", async (member) => {
