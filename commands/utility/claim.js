@@ -25,6 +25,7 @@ module.exports = {
       message.reply(
         "Bukan disini tempat claimnya BAKKAAAA!\nkesini sok <#755771083575001108>"
       );
+      return;
     }
     const emb = new MessageEmbed()
       .setAuthor(member.displayName || message.author.username)
