@@ -32,6 +32,7 @@ client.on("message", async (message) => {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const cmd = args.shift().toLowerCase();
   if (cmd === "sleep") {
+    if (message.member.id !== owner) return;
     await message.reply("I will back! Byeee");
     console.log(`Logout!`);
     process.exit();
