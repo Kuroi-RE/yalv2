@@ -15,6 +15,7 @@ client.on("ready", () => {
     `${guildHome.memberCount} Members | ${guildHome.channels.cache.size} Channels | ${guildHome.roles.cache.size} Roles`,
     "V2.0.6",
     "I'm Online!",
+    ".help list of commands.",
   ];
   setInterval(() => {
     let rndmAct = activity[Math.floor(Math.random() * activity.length)];
