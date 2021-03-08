@@ -25,7 +25,7 @@ module.exports = (client) => {
         )
         .setColor("GREEN")
         .setDescription(
-          `**${oldVoiceState.member.user.username}** has joined to **${oldVoiceState.channel.name}** Channel!`
+          `**${oldVoiceState.member.user.username}** Leaved from **${oldVoiceState.channel.name}** Channel!`
         )
         .setThumbnail(oldVoiceState.guild.iconURL());
       channel.send(embed1);
